@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Site Optimal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container login-form" id="login-form">
+            <form action="" id="login" method="POST" class="form">
+                <h2 class="form-title title">Log In</h2>
+                <div class="form-icon"></div>
+                <span class="form-span">Or use your Email to log into your account</span>
+                <input type="password" class="form-input" placeholder="Password" required>
+                <input type="email" class="form-input" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <a href="#" class="form-link">Forgot Password?</a>
+                <button class="form-button button submit">Sign In</button>
+            </form>
+        </div>
+        
+
+        <div class="container register-form" id="register-form">
+            <form action="" id="register" method="POST" class="form">
+                <h2 class="form-title title">Create Account</h2>
+                <div class="form-icon"></div>
+                <span class="form-span">Or use your Email for registration</span>
+                <input type="text" class="form-input" placeholder="Name" required>
+                <input type="password" class="form-input" placeholder="Password" required minlength="6">
+                <input type="password" class="form-input" placeholder="Confirm Password" id="confirm-password" required>
+                <input type="email" class="form-input" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <button class="form-button button submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="switch" id="switch-frm">
+            <div class="switch-circle"></div>
+            <div class="switch-circle switch-circle-t"></div>
+            <div class="switch-form" id="switch-f1">
+                <h2 class="switch-title title">Welcome Back!</h2>
+                <p class="switch-description description">To keep connected please log in with your personal info</p>
+                <button class="switch-button button switch-btn">Log In</button>
+            </div>
+
+            <div class="switch-form is-hidden" id="switch-f2">
+                <h2 class="switch-title title">Hello!</h2>
+                <p class="switch-description description">Enter your personal details to start</p>
+                <button class="switch-button button switch-btn">Register</button>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Loading Indicator -->
+    <div class="loading-indicator" style="display:none;">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
